@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style_survey.teste.css">
+
+</head>
+
+<body>
+    <div class="wrap-survey">
+        <div class="article-survey">
+            <div class="button-group" id="button-group">
+                <p>O artigo foi útil?</p>
+                <button class="article-survey-button" data-value="1" type="button" id="article-survey-button-yes">
+                    Sim, obrigado
+                </button>
+                <button class="article-survey-button" data-value="0" type="button" id="article-survey-button-no">
+                    Realmente não
+                </button>
+            </div>
+
+            <div class="feedback-survey-dropdown" id="feedback-survey-dropdown">
+                <div class="header-feedback-survey-dropdown">
+                    <p>Desculpe por isso. Por que o artigo não foi útil?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16" id="close-feedback-survey-dropdown">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback"
+                        id="Difícil de entender">
+                    <label for="Difícil de entender" class="reason-negative-feedback">Difícil de entender</label>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Impreciso">
+                    <label for="Impreciso" class="reason-negative-feedback">Impreciso</label>
+                </div>
+
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback"
+                        id="Irrelevante">
+                    <label for="Irrelevante" class="reason-negative-feedback">Irrelevante</label>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Outro">
+                    <label for="Outro" class="reason-negative-feedback">Outro</label>
+                </div>
+            </div>
+            <div class="feedback-finish" id="feedback-finish">
+                <h5>Agradecemos o seu feedback.</h5>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="wrap-survey">
+        <div class="article-survey">
+            <div class="button-group" id="button-group">
+                <p>Was this article helpful?</p>
+                <button class="article-survey-button" data-value="1" type="button" id="article-survey-button-yes">
+                    Yes, thanks
+                </button>
+                <button class="article-survey-button" data-value="0" type="button" id="article-survey-button-no">
+                    Not really
+                </button>
+            </div>
+            
+            <div class="feedback-survey-dropdown" id="feedback-survey-dropdown">
+                <div class="header-feedback-survey-dropdown">
+                    <h4>Sorry about that! Why wasn't the article helpful?</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="close-feedback-survey-dropdown">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Difícil de entender">
+                    <label for="Difícil de entender" class="reason-negative-feedback">Hard to understand</label>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Impreciso">
+                    <label for="Impreciso" class="reason-negative-feedback">Inaccurate</label>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Problema na Tradução">
+                    <label for="Problema na Tradução" class="reason-negative-feedback">Translation is wrong</label>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Irrelevante">
+                    <label for="Irrelevante" class="reason-negative-feedback">Irrelevant</label>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Outro">
+                    <label for="Outro" class="reason-negative-feedback">Other</label>
+                </div>
+            </div>
+            <div class="feedback-finish" id="feedback-finish">
+                <h5>Thank you for your feedback.</h5>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="wrap-survey">
+        <div class="article-survey">
+            <div class="button-group" id="button-group">
+                <p>¿Este artículo ha sido útil?</p>
+                <button class="article-survey-button" data-value="1" type="button" id="article-survey-button-yes">
+                    Sí, gracias
+                </button>
+                <button class="article-survey-button" data-value="0" type="button" id="article-survey-button-no">
+                    No realmente
+                </button>
+            </div>
+            
+            <div class="feedback-survey-dropdown" id="feedback-survey-dropdown">
+                <div class="header-feedback-survey-dropdown">
+                    <h4>¡Lo lamentamos! ¿Por qué no te resultó útil el artículo?</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="close-feedback-survey-dropdown">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Difícil de entender">
+                    <label for="Difícil de entender" class="reason-negative-feedback">Difícil de entender</label>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Impreciso">
+                    <label for="Impreciso" class="reason-negative-feedback">Inexacto</label>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Problema na Tradução">
+                    <label for="Problema na Tradução" class="reason-negative-feedback">Problema de traducción</label>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Irrelevante">
+                    <label for="Irrelevante" class="reason-negative-feedback">Irrelevante</label>
+                </div>
+                <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                    <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Outro">
+                    <label for="Outro" class="reason-negative-feedback">Otro</label>
+                </div>
+            </div>
+            <div class="feedback-finish" id="feedback-finish">
+                <h5>¡Gracias por su respuesta!</h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

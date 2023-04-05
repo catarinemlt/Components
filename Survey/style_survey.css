@@ -1,0 +1,116 @@
+:root {
+  --survey-primary-color: #ED008C;
+  --survey-secondary-color: #770045;
+  --survey-white-color: #FFF;
+  --survey-black-color: #000;
+  --survey-gray-color: #dfe1e6;
+}
+
+.wrap-survey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-survey {
+  width: 100%;
+  border-top: 1px solid var(--survey-primary-color);
+  text-align: center;
+  padding: 8px 0;
+}
+
+.button-group>p{
+  margin: 8px 0;
+}
+
+.article-survey .article-survey-button {
+  display: inline-block;
+  padding: 10px 0;
+  width: 130px;
+  background-color: var(--survey-white-color);
+  color: var(--survey-primary-color);
+  cursor: pointer;
+  margin: 5px 2px;
+  border: 1px solid var(--survey-primary-color);
+  border-radius: 4px;
+  transition: all .3s;
+}
+
+.article-survey .article-survey-button:hover {
+  background-color: var(--survey-primary-color);
+  color: var(--survey-white-color);
+}
+
+.feedback-survey-dropdown {
+  border: 1px solid var(--survey-black-color);
+  margin-top: 5px;
+  box-shadow: 0 2px 5px 1px var(--survey-gray-color);
+  border: 1px solid var(--survey-gray-color);
+  border-radius: 3px;
+  text-align: left;
+  padding: 16px;
+  display: none;
+}
+
+.header-feedback-survey-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.header-feedback-survey-dropdown>p{
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.header-feedback-survey-dropdown svg {
+  cursor: pointer;
+  fill: var(--survey-primary-color);
+  transition: all .5s;
+}
+
+.header-feedback-survey-dropdown svg:hover {
+  fill: var(--survey-secondary-color);
+}
+
+.reason-negative-feedback {
+  margin: 3px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.reason-negative-feedback label {
+  width: 100%;
+  cursor: pointer;
+}
+
+.reason-negative-feedback input[type="radio"] {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.feedback-finish {
+  display: none;
+}
+
+.feedback-finish p {
+  font-weight: bold;
+}
+
+.feedback-is-open {
+  display: block;
+}
+
+.feedback-is-selected {
+  background-color: var(--survey-primary-color) !important;
+  color: var(--survey-white-color) !important;
+}
+
+.feedback-is-closed {
+  display: none;
+}
