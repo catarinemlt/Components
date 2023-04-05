@@ -10,17 +10,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 
 .article-survey {
   width: 100%;
   border-top: 1px solid var(--survey-primary-color);
   text-align: center;
-  padding: 8px 0;
+  padding: 16px 0;
 }
 
 .button-group>p{
-  margin: 8px 0;
+  margin-bottom: 16px;
 }
 
 .article-survey .article-survey-button {

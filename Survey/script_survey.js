@@ -45,7 +45,7 @@ const survey_parameters = {
                     </div>
                 </div>
                 <div class="feedback-finish" id="feedback-finish">
-                    <h5>Agradecemos o seu feedback.</h5>
+                    <p>Agradecemos o seu feedback.</p>
                 </div>
 
             </div>
@@ -91,7 +91,7 @@ const survey_parameters = {
                     </div>
                 </div>
                 <div class="feedback-finish" id="feedback-finish">
-                    <h5>Thank you for your feedback.</h5>
+                    <p>Thank you for your feedback.</p>
                 </div>
             </div>
         </div>`,
@@ -136,7 +136,7 @@ const survey_parameters = {
                     </div>
                 </div>
                 <div class="feedback-finish" id="feedback-finish">
-                    <h5>¡Gracias por su respuesta!</h5>
+                    <p>¡Gracias por su respuesta!</p>
                 </div>
             </div>
         </div>`
