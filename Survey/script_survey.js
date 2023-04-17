@@ -5,7 +5,7 @@
 const survey_parameters = {
     pt: `<div class="wrap-survey">
             <div class="article-survey">
-            <div class="button-group" id="button-group">
+                <div class="button-group" id="button-group">
                     <p>O artigo foi útil?</p>
                     <button class="article-survey-button" data-value="1" type="button" id="article-survey-button-yes">
                         Sim, obrigado
@@ -31,17 +31,13 @@ const survey_parameters = {
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Impreciso">
-                        <label for="Impreciso" class="reason-negative-feedback">Impreciso</label>
+                        <label for="Impreciso" class="reason-negative-feedback">Informações incorretas</label>
                     </div>
 
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback"
                             id="Irrelevante">
-                        <label for="Irrelevante" class="reason-negative-feedback">Irrelevante</label>
-                    </div>
-                    <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
-                        <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Outro">
-                        <label for="Outro" class="reason-negative-feedback">Outro</label>
+                        <label for="Irrelevante" class="reason-negative-feedback">Não contém as informações que eu preciso</label>
                     </div>
                 </div>
                 <div class="feedback-finish" id="feedback-finish">
@@ -75,7 +71,7 @@ const survey_parameters = {
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Impreciso">
-                        <label for="Impreciso" class="reason-negative-feedback">Inaccurate</label>
+                        <label for="Impreciso" class="reason-negative-feedback">Incorrect information</label>
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Problema na Tradução">
@@ -83,11 +79,7 @@ const survey_parameters = {
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Irrelevante">
-                        <label for="Irrelevante" class="reason-negative-feedback">Irrelevant</label>
-                    </div>
-                    <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
-                        <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Outro">
-                        <label for="Outro" class="reason-negative-feedback">Other</label>
+                        <label for="Irrelevante" class="reason-negative-feedback">Missing the information I need</label>
                     </div>
                 </div>
                 <div class="feedback-finish" id="feedback-finish">
@@ -120,7 +112,7 @@ const survey_parameters = {
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Impreciso">
-                        <label for="Impreciso" class="reason-negative-feedback">Inexacto</label>
+                        <label for="Impreciso" class="reason-negative-feedback">Información incorrecta</label>
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Problema na Tradução">
@@ -128,11 +120,7 @@ const survey_parameters = {
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Irrelevante">
-                        <label for="Irrelevante" class="reason-negative-feedback">Irrelevante</label>
-                    </div>
-                    <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
-                        <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Outro">
-                        <label for="Outro" class="reason-negative-feedback">Otro</label>
+                        <label for="Irrelevante" class="reason-negative-feedback">Falta la información que necesito</label>
                     </div>
                 </div>
                 <div class="feedback-finish" id="feedback-finish">
