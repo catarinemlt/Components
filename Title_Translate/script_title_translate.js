@@ -5,7 +5,6 @@
 //Títulos em Portugues
 const titles_documents_PT = [
     'Analytics',//título para teste
-    'Ajuda',
     'Primeiros passos',
     'FAQ, Tutoriais e Treinamentos',
     'Guia Rápido',
