@@ -2,9 +2,9 @@
     SCRIPT DESTINADO A TRADUZIR OS TÍTULOS DOS DOCUMENTOS NAS CAIXAS INICIAIS(TILES) QUANDO O USUÁRIO TROCAR DE IDIOMA
 */
 
-//Título em Portugues
+//Títulos em Portugues
 const titles_documents_PT = [
-    'Analytics',
+    'Analytics',//título para teste
     'Ajuda',
     'Primeiros passos',
     'FAQ, Tutoriais e Treinamentos',
@@ -15,9 +15,9 @@ const titles_documents_PT = [
     'Manual de Integrações'
 ];
 
+//Títulos em Ingles
 const titles_documents_EN = [
-    'Ingles',
-    'Help',
+    'Ingles',//título para teste
     'Getting started',
     'FAQ, Totorials and Trainings',
     'Quick Guide',
@@ -27,16 +27,16 @@ const titles_documents_EN = [
     'Integrations Manual'
 ];
 
+//Títulos em Espanhol
 const titles_documents_ES = [
-    'Espanhol',
-    'Help',
-    'Getting started',
+    'Espanhol',//título para teste
+    'Empieza aquí',
     'FAQ, Totorials and Trainings',
-    'Quick Guide',
-    'Conceptual Business Manual',
-    'User Manual',
-    'Agents Installation Manual',
-    'Integrations Manual'
+    'Guía Rápida',
+    'Manual Conceptual de Negocio',
+    'Manual del Usuario',
+    'Manual de Instalación del Agente',
+    'Manual de Integraciones'
 ];
 
 
