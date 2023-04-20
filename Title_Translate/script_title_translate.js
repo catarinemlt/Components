@@ -52,9 +52,13 @@ function translate_titles(html_element) {
 
             switch (document.URL) {
                 case 'https://testes.scrollhelp.site/?l=en':
+                case 'https://helpcenter-nddprint.ndd.tech/?l=en':
+                case 'https://helpcenter-nddorbix.ndd.tech/?l=en':
                     html_element.innerHTML = titles_documents_EN[i];
                     break;
                 case 'https://testes.scrollhelp.site/?l=es':
+                case 'https://helpcenter-nddprint.ndd.tech/?l=es':
+                case 'https://helpcenter-nddorbix.ndd.tech/?l=es':
                     html_element.innerHTML = titles_documents_ES[i];
                     break;
                 default:
