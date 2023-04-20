@@ -40,21 +40,17 @@ const titles_documents_ES = [
 ];
 
 
+const html_titles = document.querySelectorAll("h3.tile__headline");
 
-//URL Atual para que possamos trocar o nome do material
-let urlAtual = document.URL;
+function translate_titles(html_element) {
 
-var html_titles = document.querySelectorAll("h3.tile__headline");
-
-function translate_title_to_EN(html_element) {
-
-    var title = html_element.innerHTML;
+    let title = html_element.innerHTML;
 
     for (i = 0; i <= titles_documents_PT.length; i++) {
 
         if (title == titles_documents_PT[i]) {
 
-            switch (urlAtual) {
+            switch (document.URL) {
                 case 'https://testes.scrollhelp.site/?l=en':
                     html_element.innerHTML = titles_documents_EN[i];
                     break;
@@ -70,4 +66,4 @@ function translate_title_to_EN(html_element) {
 
 }
 
-html_titles.forEach(translate_title_to_EN)
+html_titles.forEach(translate_titles)
