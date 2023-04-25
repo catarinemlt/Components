@@ -1,0 +1,32 @@
+.vp-icon{
+	cursor: pointer;
+}
+figure.vp-image img {
+  border: none;
+}
+.expand-container {
+    border-color: var(--vp-color-light-gray);
+    border-radius: var(--vp-border-radius-small);
+    border-style: solid;
+    border-width: 1px;
+    margin: 0.5rem 0;
+}
+
+.aui-lozenge {
+  max-width: 30ch;
+}
+
+.vp-content-by-label {
+    border: 0;
+    margin-bottom: 2rem;
+    padding: 0rem;
+}
+
+.article__content ol, .article__content ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-left: 4ch;
+    margin-top: 0;
+    row-gap: .5rem;
+}
