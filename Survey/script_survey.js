@@ -153,6 +153,9 @@ switch (language) {
     case "es":
         container_survey.innerHTML = survey_parameters.es;
         break;
+    default:
+        container_survey.innerHTML = survey_parameters.pt;
+        break;
 }
 
 const button_no = document.getElementById("article-survey-button-no");
@@ -163,7 +166,7 @@ const button_group = document.getElementById("button-group");
 const feedback_finish = document.getElementById("feedback-finish");
 const close_feedback_survey_dropdown = document.getElementById("close-feedback-survey-dropdown");
 
-function send_positive_feddback(e) {
+function send_positive_feedback(e) {
     e.preventDefault;
 
     feedback_dropdown.classList.add("feedback-is-closed");
@@ -203,7 +206,7 @@ function close_feedback_dropdown(e) {
     feedback_finish.classList.add("feedback-is-open");
 }
 
-button_yes.addEventListener("click", send_positive_feddback);
+button_yes.addEventListener("click", send_positive_feedback);
 button_no.addEventListener("click", send_negative_feedback);
 reason_negative_feeback.forEach(send_reason_feedback);
 close_feedback_survey_dropdown.addEventListener("click", close_feedback_dropdown);
