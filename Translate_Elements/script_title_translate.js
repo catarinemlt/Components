@@ -11,7 +11,16 @@ const titles_documents_PT = [
     'Manual Conceitual de Negócio',
     'Manual do Usuário',
     'Manual de Instalação dos Agentes',
-    'Manual de Integrações'
+    'Manual de Integrações',
+    'Configurações de treinamento',
+    'Trilhas',
+    'Criação de treinamento presencial',
+    'Aprofundando o conhecimento',
+    'Microlearning e podcast',
+    'Certificação',
+    'Biblioteca',
+    'Gameficação',
+    'Webinar'
 ];
 
 //Títulos em Ingles
@@ -23,7 +32,16 @@ const titles_documents_EN = [
     'Conceptual Business Manual',
     'User Manual',
     'Agents Installation Manual',
-    'Integrations Manual'
+    'Integrations Manual',
+    'Training settings',
+    'Tracks',
+    'Creating in person training',
+    'Deepening the knowledge',
+    'Microlearning and podcast',
+    'Certification',
+    'Library',
+    'Gamification',
+    'Webinar'
 ];
 
 //Títulos em Espanhol
@@ -35,7 +53,16 @@ const titles_documents_ES = [
     'Manual Conceptual de Negocio',
     'Manual del Usuario',
     'Manual de Instalación del Agente',
-    'Manual de Integraciones'
+    'Manual de Integraciones',
+    'Configuraciones de entrenamiento',
+    'Trillas',
+    'Creando entrenamiento en persona',
+    'Profundizando el conocimiento',
+    'Microlearning y podcast',
+    'Certificación',
+    'Biblioteca',
+    'Gamificación',
+    'Webinar'
 ];
 
 
