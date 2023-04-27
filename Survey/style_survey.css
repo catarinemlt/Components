@@ -58,7 +58,7 @@ body {
   border-radius: 3px;
   text-align: left;
   padding: 16px;
-  /* display: none; */
+  display: none;
 }
 
 .header-feedback-survey-dropdown {
@@ -104,7 +104,7 @@ body {
 }
 
 .feedback-finish {
-  /* display: none; */
+  display: none;
 }
 
 .feedback-finish p {
