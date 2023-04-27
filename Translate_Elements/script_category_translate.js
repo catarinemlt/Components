@@ -24,7 +24,7 @@ const categories_ES = [
 ];
 
 
-const html_categories = document.querySelectorAll("h2.portal__content__heading");
+const html_categories = document.querySelectorAll(".portal__content__heading h2");
 
 function translate_categories(html_element) {
 
