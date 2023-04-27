@@ -5,9 +5,9 @@
 //Títulos em Portugues
 const titles_documents_PT = [
     'Analytics',//título para teste
-    'Primeiros passos',
+    'Comece aqui',
     'FAQ, Tutoriais e Treinamentos',
-    'Guia Rápido',
+    'Guia rápido',
     'Manual Conceitual de Negócio',
     'Manual do Usuário',
     'Manual de Instalação dos Agentes',
@@ -28,7 +28,7 @@ const titles_documents_EN = [
     'Ingles',//título para teste
     'Getting started',
     'FAQ, Totorials and Trainings',
-    'Quick Guide',
+    'Quick guide',
     'Conceptual Business Manual',
     'User Manual',
     'Agents Installation Manual',
@@ -49,7 +49,7 @@ const titles_documents_ES = [
     'Espanhol',//título para teste
     'Empieza aquí',
     'FAQ, Totorials and Trainings',
-    'Guía Rápida',
+    'Guía rápida',
     'Manual Conceptual de Negocio',
     'Manual del Usuario',
     'Manual de Instalación del Agente',
