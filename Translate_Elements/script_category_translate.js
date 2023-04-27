@@ -51,7 +51,6 @@ function translate_categories(html_element) {
 
         }
     }
-
 }
 
 html_categories.forEach(translate_categories)
