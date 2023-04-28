@@ -60,7 +60,7 @@ const survey_parameters = {
                 
                 <div class="feedback-survey-dropdown" id="feedback-survey-dropdown">
                     <div class="header-feedback-survey-dropdown">
-                        <h4>Sorry about that! Why wasn't the article helpful?</h4>
+                        <p>Sorry about that! Why wasn't the article helpful?</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="close-feedback-survey-dropdown">
                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
@@ -101,7 +101,7 @@ const survey_parameters = {
                 
                 <div class="feedback-survey-dropdown" id="feedback-survey-dropdown">
                     <div class="header-feedback-survey-dropdown">
-                        <h4>¡Lo lamentamos! ¿Por qué no te resultó útil el artículo?</h4>
+                        <p>¡Lo lamentamos! ¿Por qué no te resultó útil el artículo?</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="close-feedback-survey-dropdown">
                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
@@ -169,19 +169,22 @@ const close_feedback_survey_dropdown = document.getElementById("close-feedback-s
 function send_positive_feedback(e) {
     e.preventDefault;
 
-    feedback_dropdown.classList.add("feedback-is-closed");
+    feedback_dropdown.classList.add("feedback-survey-dropdown-is-closed");
 
-    button_group.classList.add("feedback-is-closed");
-    feedback_finish.classList.add("feedback-is-open");
+    button_group.classList.add("feedback-survey-dropdown-is-closed");
+    feedback_finish.classList.add("feedback-survey-dropdown-is-open");
 }
 
 function send_negative_feedback(e) {
     e.preventDefault;
 
-    feedback_dropdown.classList.toggle("feedback-is-open");
+    feedback_dropdown.classList.toggle("feedback-survey-dropdown-is-open");
 
-    button_no.classList.add("feedback-is-selected");
+    button_no.classList.add("article-survey-button-selected");
+    button_yes.classList.add("article-survey-button-disabled");
+
     button_no.disabled = true;
+    button_yes.disabled = true;
 }
 
 
@@ -191,9 +194,9 @@ function send_reason_feedback(element) {
 
         e.preventDefault;
 
-        feedback_dropdown.classList.add("feedback-is-closed");
-        button_group.classList.add("feedback-is-closed");
-        feedback_finish.classList.add("feedback-is-open");
+        feedback_dropdown.classList.add("feedback-survey-dropdown-is-closed");
+        button_group.classList.add("feedback-survey-dropdown-is-closed");
+        feedback_finish.classList.add("feedback-survey-dropdown-is-open");
     });
 
 }
@@ -201,9 +204,9 @@ function send_reason_feedback(element) {
 function close_feedback_dropdown(e) {
     e.preventDefault;
 
-    feedback_dropdown.classList.add("feedback-is-closed");
-    button_group.classList.add("feedback-is-closed");
-    feedback_finish.classList.add("feedback-is-open");
+    feedback_dropdown.classList.add("feedback-survey-dropdown-is-closed");
+    button_group.classList.add("feedback-survey-dropdown-is-closed");
+    feedback_finish.classList.add("feedback-survey-dropdown-is-open");
 }
 
 button_yes.addEventListener("click", send_positive_feedback);
