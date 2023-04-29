@@ -1,9 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,900&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
 
 :root {
   --survey-primary-color: #ED008C;
@@ -18,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  width: 600px;
+  width: 100%;
 }
 
 .article-survey {
