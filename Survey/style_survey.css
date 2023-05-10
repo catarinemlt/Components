@@ -24,18 +24,23 @@
   padding: 16px 0;
 }
 
+.button-group{
+  display: flex;
+  align-items: center;
+}
+
 .button-group>p{
-  margin-bottom: 16px;
+  margin-right: 8px;
+  font-weight: bold;
 }
 
 .article-survey .article-survey-button {
-  display: inline-block;
-  padding: 10px 0;
-  width: 130px;
+  padding: 8px 0;
+  width: 50px;
   background-color: var(--survey-white-color);
   color: var(--survey-primary-color);
   cursor: pointer;
-  margin: 5px 2px;
+  margin: 0px 4px;
   border: 1px solid var(--survey-primary-color);
   border-radius: 4px;
   transition: all .3s;
@@ -103,6 +108,7 @@
 .reason-negative-feedback label {
   width: 100%;
   cursor: pointer;
+ 
 }
 
 .reason-negative-feedback input[type="radio"] {
@@ -114,6 +120,7 @@
 
 .feedback-finish {
   display: none;
+  text-align: left;
 }
 
 .feedback-finish p {

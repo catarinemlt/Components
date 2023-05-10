@@ -2,22 +2,57 @@
     SCRIPT DESTINADO A CRIAR O COMPONENTE DE FEEDBACK DE ARTIGOS/PÁGINAS
 */
 
-const survey_parameters = {
+const survey_text = {
+    pt: [
+        "O artigo foi útil?",
+        "Sim",
+        "Não",
+        "Desculpe por isso. Por que o artigo não foi útil?",
+        "Difícil de entender",
+        "Informações incorretas",
+        "Não contém as informações que eu preciso",
+        "Agradecemos o seu feedback."
+    ],
+    en: [
+        "Was this article helpful?",
+        "Yes",
+        "No",
+        "Sorry about that! Why wasn't the article helpful?",
+        "Hard to understand",
+        "Incorrect information",
+        "Missing the information I need",
+        "Translation is wrong",
+        "Thank you for your feedback."
+    ],
+    es: [
+        "¿Este artículo ha sido útil?",
+        "Sí",
+        "No",
+        "¡Lo lamentamos! ¿Por qué no te resultó útil el artículo?",
+        "Difícil de entender",
+        "Información incorrecta",
+        "Falta la información que necesito",
+        "Problema de traducción",
+        "¡Gracias por su respuesta!"
+    ],
+}
+
+const survey_html = {
     pt: `<div class="wrap-survey">
             <div class="article-survey">
                 <div class="button-group" id="button-group">
-                    <p>O artigo foi útil?</p>
+                    <p>${survey_text.pt[0]}</p>
                     <button class="article-survey-button" data-value="1" type="button" id="article-survey-button-yes">
-                        Sim, obrigado
+                    ${survey_text.pt[1]}
                     </button>
                     <button class="article-survey-button" data-value="0" type="button" id="article-survey-button-no">
-                        Realmente não
+                    ${survey_text.pt[2]}
                     </button>
                 </div>
 
                 <div class="feedback-survey-dropdown" id="feedback-survey-dropdown">
                     <div class="header-feedback-survey-dropdown">
-                        <p>Desculpe por isso. Por que o artigo não foi útil?</p>
+                        <p>${survey_text.pt[3]}</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x"
                             viewBox="0 0 16 16" id="close-feedback-survey-dropdown">
                             <path
@@ -27,21 +62,21 @@ const survey_parameters = {
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback"
                             id="Difícil de entender">
-                        <label for="Difícil de entender" class="reason-negative-feedback">Difícil de entender</label>
+                        <label for="Difícil de entender" class="reason-negative-feedback">${survey_text.pt[4]}</label>
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Impreciso">
-                        <label for="Impreciso" class="reason-negative-feedback">Informações incorretas</label>
+                        <label for="Impreciso" class="reason-negative-feedback">${survey_text.pt[5]}</label>
                     </div>
 
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback"
                             id="Irrelevante">
-                        <label for="Irrelevante" class="reason-negative-feedback">Não contém as informações que eu preciso</label>
+                        <label for="Irrelevante" class="reason-negative-feedback">${survey_text.pt[6]}</label>
                     </div>
                 </div>
                 <div class="feedback-finish" id="feedback-finish">
-                    <p>Agradecemos o seu feedback.</p>
+                    <p>${survey_text.pt[7]}</p>
                 </div>
 
             </div>
@@ -49,82 +84,82 @@ const survey_parameters = {
     en: `<div class="wrap-survey">
             <div class="article-survey">
                 <div class="button-group" id="button-group">
-                    <p>Was this article helpful?</p>
+                    <p>${survey_text.en[0]}</p>
                     <button class="article-survey-button" data-value="1" type="button" id="article-survey-button-yes">
-                        Yes, thanks
+                        ${survey_text.en[1]}
                     </button>
                     <button class="article-survey-button" data-value="0" type="button" id="article-survey-button-no">
-                        Not really
+                        ${survey_text.en[2]}
                     </button>
                 </div>
                 
                 <div class="feedback-survey-dropdown" id="feedback-survey-dropdown">
                     <div class="header-feedback-survey-dropdown">
-                        <p>Sorry about that! Why wasn't the article helpful?</p>
+                        <p>${survey_text.en[3]}</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="close-feedback-survey-dropdown">
                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Difícil de entender">
-                        <label for="Difícil de entender" class="reason-negative-feedback">Hard to understand</label>
+                        <label for="Difícil de entender" class="reason-negative-feedback">${survey_text.en[4]}</label>
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Impreciso">
-                        <label for="Impreciso" class="reason-negative-feedback">Incorrect information</label>
-                    </div>
-                    <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
-                        <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Problema na Tradução">
-                        <label for="Problema na Tradução" class="reason-negative-feedback">Translation is wrong</label>
+                        <label for="Impreciso" class="reason-negative-feedback">${survey_text.en[5]}</label>
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Irrelevante">
-                        <label for="Irrelevante" class="reason-negative-feedback">Missing the information I need</label>
+                        <label for="Irrelevante" class="reason-negative-feedback">${survey_text.en[6]}</label>
+                    </div>
+                    <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                        <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Problema na Tradução">
+                        <label for="Problema na Tradução" class="reason-negative-feedback">${survey_text.en[7]}</label>
                     </div>
                 </div>
                 <div class="feedback-finish" id="feedback-finish">
-                    <p>Thank you for your feedback.</p>
+                    <p>${survey_text.en[8]}</p>
                 </div>
             </div>
         </div>`,
     es: `<div class="wrap-survey">
             <div class="article-survey">
                 <div class="button-group" id="button-group">
-                    <p>¿Este artículo ha sido útil?</p>
+                    <p>${survey_text.es[0]}</p>
                     <button class="article-survey-button" data-value="1" type="button" id="article-survey-button-yes">
-                        Sí, gracias
+                        ${survey_text.es[1]}
                     </button>
                     <button class="article-survey-button" data-value="0" type="button" id="article-survey-button-no">
-                        No realmente
+                        ${survey_text.es[2]}
                     </button>
                 </div>
                 
                 <div class="feedback-survey-dropdown" id="feedback-survey-dropdown">
                     <div class="header-feedback-survey-dropdown">
-                        <p>¡Lo lamentamos! ¿Por qué no te resultó útil el artículo?</p>
+                        <p>${survey_text.es[3]}</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="close-feedback-survey-dropdown">
                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Difícil de entender">
-                        <label for="Difícil de entender" class="reason-negative-feedback">Difícil de entender</label>
+                        <label for="Difícil de entender" class="reason-negative-feedback">${survey_text.es[4]}</label>
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Impreciso">
-                        <label for="Impreciso" class="reason-negative-feedback">Información incorrecta</label>
-                    </div>
-                    <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
-                        <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Problema na Tradução">
-                        <label for="Problema na Tradução" class="reason-negative-feedback">Problema de traducción</label>
+                        <label for="Impreciso" class="reason-negative-feedback">${survey_text.es[5]}</label>
                     </div>
                     <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
                         <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Irrelevante">
-                        <label for="Irrelevante" class="reason-negative-feedback">Falta la información que necesito</label>
+                        <label for="Irrelevante" class="reason-negative-feedback">${survey_text.es[6]}</label>
+                    </div>
+                    <div id="container-radio-reason-negative-feedback" class="reason-negative-feedback">
+                        <input type="radio" class="reason-negative-feedback" name="reason-negative-feedback" id="Problema na Tradução">
+                        <label for="Problema na Tradução" class="reason-negative-feedback">${survey_text.es[7]}</label>
                     </div>
                 </div>
                 <div class="feedback-finish" id="feedback-finish">
-                    <p>¡Gracias por su respuesta!</p>
+                    <p>${survey_text.es[8]}</p>
                 </div>
             </div>
         </div>`
@@ -145,16 +180,16 @@ const container_survey = document.querySelector(".container_survey")
 
 switch (language) {
     case "pt":
-        container_survey.innerHTML = survey_parameters.pt;
+        container_survey.innerHTML = survey_html.pt;
         break;
     case "en":
-        container_survey.innerHTML = survey_parameters.en;
+        container_survey.innerHTML = survey_html.en;
         break;
     case "es":
-        container_survey.innerHTML = survey_parameters.es;
+        container_survey.innerHTML = survey_html.es;
         break;
     default:
-        container_survey.innerHTML = survey_parameters.pt;
+        container_survey.innerHTML = survey_html.pt;
         break;
 }
 
