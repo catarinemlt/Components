@@ -124,6 +124,7 @@
 .feedback-finish p {
   font-weight: bold;
   padding: 8px 0;
+  margin-bottom: 0;
 }
 
 .feedback-survey-dropdown-is-open {
