@@ -1,3 +1,6 @@
+
+
+
 :root {
   --survey-primary-color: #ED008C;
   --survey-secondary-color: #770045;
@@ -18,27 +21,22 @@
   width: 100%;
   border-top: 1px solid var(--survey-primary-color);
   text-align: center;
-  padding: 24px 0;
+  padding: 16px 0;
 }
 
-.button-group {
-  display: flex;
-  align-items: center;
-}
-
-.button-group>p {
+.button-group>p{
+  margin-bottom: 16px;
   font-weight: bold;
-  margin: 0 8px 0 0;
-  padding: 8px 0;
 }
 
 .article-survey .article-survey-button {
+  display: inline-block;
   padding: 8px 0;
-  width: 50px;
+  width: 60px;
   background-color: var(--survey-white-color);
   color: var(--survey-primary-color);
   cursor: pointer;
-  margin: 0px 4px;
+  margin: 5px 2px;
   border: 1px solid var(--survey-primary-color);
   border-radius: 4px;
   transition: all .3s;
@@ -49,7 +47,7 @@
   color: var(--survey-white-color);
 }
 
-.article-survey-button-disabled {
+.article-survey-button-disabled{
   background-color: var(--survey-gray-color) !important;
   color: var(--survey-white-color) !important;
   border: 1px solid var(--survey-gray-color) !important;
@@ -71,6 +69,8 @@
   text-align: left;
   padding: 16px;
   display: none;
+  width: 55%;
+  margin: 5px auto 5px auto;
 }
 
 .header-feedback-survey-dropdown {
@@ -80,7 +80,7 @@
   margin-bottom: 8px;
 }
 
-.header-feedback-survey-dropdown>p {
+.header-feedback-survey-dropdown>p{
   font-weight: bold;
   margin: 8px 0;
 }
@@ -106,7 +106,6 @@
 .reason-negative-feedback label {
   width: 100%;
   cursor: pointer;
-
 }
 
 .reason-negative-feedback input[type="radio"] {
@@ -118,13 +117,10 @@
 
 .feedback-finish {
   display: none;
-  text-align: left;
 }
 
 .feedback-finish p {
   font-weight: bold;
-  padding: 8px 0;
-  margin-bottom: 0;
 }
 
 .feedback-survey-dropdown-is-open {
@@ -134,3 +130,4 @@
 .feedback-survey-dropdown-is-closed {
   display: none;
 }
+
