@@ -29,6 +29,7 @@
 .button-group>p {
   font-weight: bold;
   margin: 0 8px 0 0;
+  padding: 8px 0;
 }
 
 .article-survey .article-survey-button {
@@ -123,6 +124,7 @@
 .feedback-finish p {
   margin: 8px 0;
   font-weight: bold;
+  padding: 8px 0;
 }
 
 .feedback-survey-dropdown-is-open {
