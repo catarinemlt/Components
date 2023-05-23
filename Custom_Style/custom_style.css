@@ -30,3 +30,8 @@ figure.vp-image img {
     margin-top: 0;
     row-gap: .5rem;
 }
+
+hr{
+  margin-bottom: 2rem!important;
+  margin-top: 2rem!important;
+}
