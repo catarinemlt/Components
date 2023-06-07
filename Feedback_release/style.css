@@ -1,0 +1,50 @@
+:root {
+    --survey-primary-color: #ED008C;
+    --survey-secondary-color: #770045;
+    --survey-white-color: #FFF;
+    --survey-black-color: #000;
+    --survey-gray-color: #dfe1e6;
+}
+
+
+.container-feedback-release {
+    float: right;
+    margin-top: 0px;
+}
+
+
+.wrap-feedback-release>span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.button-group-feedback-release {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.button-group-feedback-release button {
+    padding: 6px;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: var(--survey-white-color);
+    color: var(--survey-primary-color);
+    border-color: var(--survey-primary-color);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button-group-feedback-release button:hover{
+    background-color: var(--survey-primary-color);
+    color: var(--survey-white-color);
+}
+
+.button-selected{
+    background-color: var(--survey-primary-color)!important;
+    color: var(--survey-white-color)!important;
+}
