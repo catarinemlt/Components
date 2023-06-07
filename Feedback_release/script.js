@@ -38,7 +38,7 @@ const feedback_release_html = {
             </div>
         </div>`,
     es: `<div class="wrap-feedback-release">
-            <span>¿Te ha resultado útil?</span>
+            <span>¿Te resultó útil?</span>
             <div class="button-group-feedback-release" id="button-group-feedback-release">
                 <button class="release-feedback-button" type="button" id="release-feedback-button-yes">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -69,13 +69,13 @@ html_headers_release_array.forEach(header => {
 
 const container_feedback_release = document.querySelectorAll(".container-feedback-release");
 
-// const site_url = document.URL;
-// const array_site_url = site_url.split("/");
-// const language = array_site_url[3];
+const rf_site_url = document.URL;
+const array_rf_site_url = rf_site_url.split("/");
+const rf_language = array_rf_site_url[3];
 
 //MUDAR CONFORME O IDIOMA
 container_feedback_release.forEach(container => {
-    switch (language) {
+    switch (rf_language) {
         case "pt":
             container.innerHTML = feedback_release_html.pt;
             break;
