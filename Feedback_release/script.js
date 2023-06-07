@@ -95,10 +95,18 @@ container_feedback_release.forEach(container => {
 const buttons_positive_feedback = document.querySelectorAll("button.release-feedback-button-yes");
 const buttons_negative_feedback = document.querySelectorAll("button.release-feedback-button-no");
 
+const svg_buttons_positive_feedback = document.querySelectorAll("svg.release-feedback-button-yes");
+const svg_buttons_negative_feedback = document.querySelectorAll("svg.release-feedback-button-no");
+
 (function add_button_details() {
     for (let i = 0; i < buttons_positive_feedback.length; i++) {
         buttons_positive_feedback[i].setAttribute("id", buttons_positive_feedback[i].closest("h2").id)
         buttons_negative_feedback[i].setAttribute("id", buttons_negative_feedback[i].closest("h2").id)
+    }
+
+    for (let i = 0; i < svg_buttons_positive_feedback.length; i++) {
+        svg_buttons_positive_feedback[i].setAttribute("id", svg_buttons_positive_feedback[i].closest("h2").id)
+        svg_buttons_negative_feedback[i].setAttribute("id", svg_buttons_negative_feedback[i].closest("h2").id)
     }
 })();
 
