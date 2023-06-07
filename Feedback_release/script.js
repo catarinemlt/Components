@@ -1,4 +1,4 @@
-const feedback_release_html = {
+const html_release_feedback = {
     pt: `<div class="wrap-feedback-release">
             <span>Isso foi útil?</span>
             <div class="button-group-feedback-release" id="button-group-feedback-release">
@@ -73,20 +73,19 @@ const rf_site_url = document.URL;
 const array_rf_site_url = rf_site_url.split("/");
 const rf_language = array_rf_site_url[3];
 
-//MUDAR CONFORME O IDIOMA
 container_feedback_release.forEach(container => {
     switch (rf_language) {
         case "pt":
-            container.innerHTML = feedback_release_html.pt;
+            container.innerHTML = html_release_feedback.pt;
             break;
         case "en":
-            container.innerHTML = feedback_release_html.en;
+            container.innerHTML = html_release_feedback.en;
             break;
         case "es":
-            container.innerHTML = feedback_release_html.es;
+            container.innerHTML = html_release_feedback.es;
             break;
         default:
-            container.innerHTML = feedback_release_html.pt;
+            container.innerHTML = html_release_feedback.pt;
             break;
     }
 
@@ -120,8 +119,6 @@ const buttons_negative_feedback = document.querySelectorAll("#release-feedback-b
                     button.classList.add("button-selected")
             });
         }
-
-
     }
 })();
 
@@ -166,23 +163,17 @@ function save_user_feedback(feedback_to_add) {
 
     } else {
 
-        let all_feedbacks = JSON.parse(localStorage.getItem("feedbacks"))
-
-        all_feedbacks.forEach(feedback => {
+        feedbacks_storage.forEach(feedback => {
             if (feedback.id_title_release === feedback_to_add.id_title_release) {
-                all_feedbacks.splice(all_feedbacks.indexOf(feedback), 1);
+                feedbacks_storage.splice(feedbacks_storage.indexOf(feedback), 1);
             }
         })
 
-        all_feedbacks.push(feedback_to_add);
+        feedbacks_storage.push(feedback_to_add);
 
-        localStorage.setItem("feedbacks", JSON.stringify(all_feedbacks));
+        localStorage.setItem("feedbacks", JSON.stringify(feedbacks_storage));
     }
-
 }
-
-
-
 
 
 buttons_positive_feedback.forEach((button) => {
