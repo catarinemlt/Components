@@ -10,7 +10,7 @@ const titles_documents_PT = [
     'Guia rápido',
     'Manual Conceitual de Negócio',
     'Manual do Usuário',
-    'Manual de Instalação dos Agentes',
+    'Manual de Instalação do Agente',
     'Manual de Integrações',
     'Configurações de treinamento',
     'Trilhas',
