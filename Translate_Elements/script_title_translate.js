@@ -31,7 +31,7 @@ const titles_documents_EN = [
     'Quick guide',
     'Conceptual Business Manual',
     'User Manual',
-    'Agents Installation Manual',
+    'Agent Installation Manual',
     'Integrations Manual',
     'Training settings',
     'Tracks',
