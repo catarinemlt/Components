@@ -20,7 +20,8 @@ const titles_documents_PT = [
     'Certificação',
     'Biblioteca',
     'Gameficação',
-    'Webinar'
+    'Webinar',
+    'Guia de compatibilidade de fabricantes',
 ];
 
 //Títulos em Ingles
@@ -41,7 +42,8 @@ const titles_documents_EN = [
     'Certification',
     'Library',
     'Gamification',
-    'Webinar'
+    'Webinar',
+    'Manufacturer Compatibility Guide'
 ];
 
 //Títulos em Espanhol
@@ -62,7 +64,8 @@ const titles_documents_ES = [
     'Certificación',
     'Biblioteca',
     'Gamificación',
-    'Webinar'
+    'Webinar',
+    ''
 ];
 
 
