@@ -81,13 +81,13 @@ function translate_titles(html_element) {
                 case 'https://helpcenter-nddprint.ndd.tech/?l=en':
                 case 'https://helpcenter-nddorbix.ndd.tech/?l=en':
                 case 'https://helpcenter-kubo.ndd.tech/?l=en':
-                    html_element.innerHTML = titles_documents_EN[i];
+                    html_element.innerText = titles_documents_EN[i];
                     break;
                 case 'https://testes.scrollhelp.site/?l=es':
                 case 'https://helpcenter-nddprint.ndd.tech/?l=es':
                 case 'https://helpcenter-nddorbix.ndd.tech/?l=es':
                 case 'https://helpcenter-kubo.ndd.tech/?l=es':
-                    html_element.innerHTML = titles_documents_ES[i];
+                    html_element.innerText = titles_documents_ES[i];
                     break;
                 default:
                     break;
