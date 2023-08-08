@@ -66,7 +66,7 @@ const titles_documents_ES = [
 ];
 
 
-const html_titles = document.querySelectorAll("h3.tile__headline");
+const html_titles = document.querySelectorAll("h3.tile__headline > a");
 
 function translate_titles(html_element) {
 
