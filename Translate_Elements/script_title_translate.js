@@ -70,7 +70,7 @@ const html_titles = document.querySelectorAll("h3.tile__headline");
 
 function translate_titles(html_element) {
 
-    let title = html_element.innerHTML;
+    let title = html_element.innerText;
 
     for (i = 0; i <= titles_documents_PT.length; i++) {
 
