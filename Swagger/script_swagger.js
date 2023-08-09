@@ -28,6 +28,11 @@ const apiSettings =
 			product: "NDD Orbix",
 			pageUrl: "api-de-produtos",
 			swaggerUrl: "https://developer.nddorbix.com/stock-external-integration-api/index.html"
+		},
+		{
+			product: "NDD Move",
+			pageUrl: "apis-de-integracao",
+			swaggerUrl: "https://icomprova.nddcargo.com.br:9003/index.html"
 		}
 		//O NOVO OBJETO DEVE SER INSERIDO LOGO ACIMA DESTE COMENTÁRIO
 	]

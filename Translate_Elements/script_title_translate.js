@@ -21,8 +21,8 @@ const titles_documents_PT = [
     'Biblioteca',
     'Gameficação',
     'Webinar',
-    'Guia de compatibilidade de fabricantes',
-    'Guia de módulos do MPS'
+    'Guia de compatibilidade de fabricantes',// somente ingles e portugues
+    'Guia de módulos do MPS' // somente ingles e espanhol
 ];
 
 //Títulos em Ingles
