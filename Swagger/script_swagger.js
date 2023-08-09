@@ -31,7 +31,7 @@ const apiSettings =
 		},
 		{
 			product: "NDD Move",
-			pageUrl: "apis-de-integracao",
+			pageUrl: "apis-de-integracao-nddmove",
 			swaggerUrl: "https://icomprova.nddcargo.com.br:9003/index.html"
 		}
 		//O NOVO OBJETO DEVE SER INSERIDO LOGO ACIMA DESTE COMENTÁRIO
@@ -48,7 +48,9 @@ function createSwagger(apiSettings) {
 
 	for (let apis of apiSettings.apis) {
 
-		if (apis.pageUrl == pageUrlAddApi[6]) {
+		if (apis.pageUrl == pageUrlAddApi[5]) {
+			createIframe(apis.swaggerUrl)
+		}else if (apis.pageUrl == pageUrlAddApi[6]) {
 			createIframe(apis.swaggerUrl)
 		}
 	}
