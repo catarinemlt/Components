@@ -1,9 +1,9 @@
 :root {
-  --survey-white-color: #ffffff;
-  --survey-black-color: rgba(0, 0, 0, 0.8);
-  --survey-lightgray-color: rgba(0, 0, 0, 0.1);
-  --survey-gray-color: rgba(0, 0, 0, 0.3);
-  --survey-darkgray-color: rgba(0, 0, 0, 0.7);
+  --article-survey-white-color: #ffffff;
+  --article-survey-black-color: rgba(0, 0, 0, 0.8);
+  --article-survey-lightgray-color: rgba(0, 0, 0, 0.1);
+  --article-survey-gray-color: rgba(0, 0, 0, 0.3);
+  --article-survey-darkgray-color: rgba(0, 0, 0, 0.7);
 }
 
 .wrap-survey {
@@ -22,7 +22,7 @@
   align-items: center; /* Alinhe verticalmente os elementos */
   justify-content: center; /* Alinhe horizontalmente os elementos */
   padding: 8px 24px;
-  border: 1px solid var(--survey-lightgray-color);
+  border: 1px solid var(--article-survey-lightgray-color);
   border-radius: 5px;
   text-align: center;
   font-size: 15px;
@@ -30,7 +30,7 @@
 
 .article-survey > span {
   margin-right: 20px;
-  color: var(--survey-darkgray-color);
+  color: var(--article-survey-darkgray-color);
   font-weight: bold;
 }
 
@@ -46,20 +46,20 @@
   justify-content: center; /* Alinhe horizontalmente os elementos */
   margin: 5px 2px;
   padding: 8px 15px;
-  background-color: var(--survey-white-color);
+  background-color: var(--article-survey-white-color);
   border: none;
   border-radius: 5px;
-  fill: var(--survey-gray-color);
-  color: var(--survey-darkgray-color);
+  fill: var(--article-survey-gray-color);
+  color: var(--article-survey-darkgray-color);
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s linear;
 }
 
 .button-group button:hover {
-  background-color: var(--survey-gray-color);
-  color: var(--survey-white-color);
-  fill: var(--survey-white-color);
+  background-color: var(--article-survey-gray-color);
+  color: var(--article-survey-white-color);
+  fill: var(--article-survey-white-color);
 }
 
 .button-group button svg {
@@ -70,15 +70,15 @@
 
 .article-survey-button-disabled,
 .article-survey-button-selected {
-  color: var(--survey-white-color) !important;
-  fill: var(--survey-white-color) !important;
+  color: var(--article-survey-white-color) !important;
+  fill: var(--article-survey-white-color) !important;
   cursor: not-allowed !important;
 }
 .article-survey-button-disabled {
-  background-color: var(--survey-lightgray-color) !important;
+  background-color: var(--article-survey-lightgray-color) !important;
 }
 .article-survey-button-selected {
-  background-color: var(--survey-gray-color) !important;
+  background-color: var(--article-survey-gray-color) !important;
 }
 
 /* ################## */
@@ -90,13 +90,13 @@
   bottom: 60px;
   margin: 5px auto;
   padding: 16px;
-  border: 1px solid var(--survey-lightgray-color);
+  border: 1px solid var(--article-survey-lightgray-color);
   border-radius: 5px;
-  box-shadow: 0 2px 5px 1px var(--survey-lightgray-color);
-  background-color: var(--survey-white-color);
+  box-shadow: 0 2px 5px 1px var(--article-survey-lightgray-color);
+  background-color: var(--article-survey-white-color);
   text-align: left;
   font-size: 15px;
-  color: var(--survey-darkgray-color);
+  color: var(--article-survey-darkgray-color);
   transition: all 0.2s linear;
 }
 
@@ -112,27 +112,27 @@
   margin: 4px auto;
   padding: 8px 16px;
   border: none;
-  background-color: var(--survey-darkgray-color);
-  color: var(--survey-white-color);
+  background-color: var(--article-survey-darkgray-color);
+  color: var(--article-survey-white-color);
   cursor: pointer;
   transition: all 0.2s linear;
 }
 .negative-feedback-dropdown .button_send_negative_feedback:hover {
-  background-color: var(--survey-black-color);
+  background-color: var(--article-survey-black-color);
 }
 
 .negative-feedback-dropdown .button_cancel_negative_feedback {
   margin: 4px 4px;
   padding: 8px 16px;
-  background-color: var(--survey-white-color);
-  color: var(--survey-darkgray-color);
-  border:1px solid var(--survey-lightgray-color);
+  background-color: var(--article-survey-white-color);
+  color: var(--article-survey-darkgray-color);
+  border:1px solid var(--article-survey-lightgray-color);
   cursor: pointer;
   transition: all 0.2s linear;
 }
 
 .negative-feedback-dropdown .button_cancel_negative_feedback:hover {
-  background-color: var(--survey-lightgray-color);
+  background-color: var(--article-survey-lightgray-color);
 }
 /* ################## */
 
@@ -159,7 +159,7 @@
 }
 
 .container-negative-feedback-comment {
-  border-top: 1px solid var(--survey-lightgray-color);
+  border-top: 1px solid var(--article-survey-lightgray-color);
   margin-top: 24px;
   padding: 16px 0px;
   display: flex;
@@ -170,27 +170,27 @@
   padding: 4px;
   margin: 8px 2px 0 0;
   font-family: "Roboto", sans-serif;
-  border: 1px solid var(--survey-lightgray-color);
+  border: 1px solid var(--article-survey-lightgray-color);
 }
 .container-negative-feedback-comment textarea:focus {
-  border: 1px solid var(--survey-lightgray-color);
-  outline: 1px solid var(--survey-darkgray-color);
+  border: 1px solid var(--article-survey-lightgray-color);
+  outline: 1px solid var(--article-survey-darkgray-color);
 }
 
 .container-negative-feedback-comment span {
   display: block;
   margin-top: 8px;
   font-size: 12px;
-  color: var(--survey-darkgray-color);
+  color: var(--article-survey-darkgray-color);
 }
 
 .feedback-finish {
   display: none;
   padding: 20px 32px;
   /* margin-top: 16px; */
-  border: 1px solid var(--survey-lightgray-color);
+  border: 1px solid var(--article-survey-lightgray-color);
   border-radius: 5px;
-  color: var(--survey-darkgray-color);
+  color: var(--article-survey-darkgray-color);
   text-align: center;
   font-size: 15px;
   font-weight: bold;
