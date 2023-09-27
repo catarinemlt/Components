@@ -1,0 +1,26 @@
+:root {
+  --survey-primary-color: #ed008c;
+  --survey-secondary-color: #770045;
+  --survey-white-color: #fff;
+  --survey-black-color: #000;
+  --survey-gray-color: #dfe1e6;
+}
+
+.container-icon-comment {
+  position: absolute;
+  margin-left: -40px;
+  border: #000 1px solid;
+  width: 10px;
+}
+p{
+  position: relative;
+}
+p::before{
+  content: "icon";
+  position: absolute;
+  right: -70px;
+  text-align: start;
+}
+
+@media only screen and (max-width: 600px) {
+}

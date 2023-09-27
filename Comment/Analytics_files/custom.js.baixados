@@ -1,0 +1,4 @@
+console.log("I'm working");
+vp.loadScript("https://cdn.jsdelivr.net/gh/confluencendd/components@test/Survey/script_survey.js")
+.then(() => {
+});
