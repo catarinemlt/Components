@@ -93,7 +93,7 @@ const survey_html = {
                     
                     <div class="container-negative-feedback-comment">
                         <label for="negative-feedback-comment">${survey_text.pt[8]}</label>
-                        <textarea id="negative-feedback-comment" name="negative-feedback-comment"></textarea>
+                        <textarea id="negative-feedback-comment" name="negative-feedback-comment" maxlength="100"></textarea>
                         <span>${survey_text.pt[9]}</span>
                     </div>
 
@@ -153,7 +153,7 @@ const survey_html = {
                     
                     <div class="container-negative-feedback-comment">
                         <label for="negative-feedback-comment">${survey_text.en[9]}</label>
-                        <textarea id="negative-feedback-comment" name="negative-feedback-comment"></textarea>
+                        <textarea id="negative-feedback-comment" name="negative-feedback-comment" maxlength="100"></textarea>
                         <span>${survey_text.en[10]}</span>
                     </div>
 
@@ -212,7 +212,7 @@ const survey_html = {
                     
                     <div class="container-negative-feedback-comment">
                         <label for="negative-feedback-comment">${survey_text.es[9]}</label>
-                        <textarea id="negative-feedback-comment" name="negative-feedback-comment"></textarea>
+                        <textarea id="negative-feedback-comment" name="negative-feedback-comment" maxlength="100"></textarea>
                         <span>${survey_text.es[10]}</span>
                     </div>
 
@@ -257,27 +257,27 @@ if (component_feedback_article.length !== 0) {
             break;
     }
 
-    const article_survey = document.getElementById("article-survey");
     const button_no = document.getElementById("article-survey-button-no");
     const button_yes = document.getElementById("article-survey-button-yes");
-    const modal_feedback = document.getElementById("modal-feedback")
     const button_send_negative_feedback = document.getElementById("button_send_negative_feedback");
     const button_cancel_negative_feedback = document.getElementById("button_cancel_negative_feedback");
     const radios_reason_negative_feedback = document.querySelectorAll(".container-reason-negative-feedback input[type='radio']")
-    const negative_feedback_comment = document.getElementById("negative-feedback-comment");
-    const feedback_finish = document.getElementById("feedback-finish");
 
     function disable_button_send_negative_feedback() {
+        let button_send_negative_feedback = document.getElementById("button_send_negative_feedback");
         button_send_negative_feedback.classList.add("article-survey-button-disabled");
         button_send_negative_feedback.disabled = true;
-    }
+    };
 
 
     function open_modal_feedback(e) {
         e.preventDefault;
 
+        let modal_feedback = document.getElementById("modal-feedback")
         modal_feedback.classList.add("show-modal-feedback");
 
+        let button_no = document.getElementById("article-survey-button-no");
+        let button_yes = document.getElementById("article-survey-button-yes");
         button_no.disabled = true;
         button_yes.disabled = true;
     }
@@ -285,37 +285,42 @@ if (component_feedback_article.length !== 0) {
     function close_modal_feedback(e) {
         e.preventDefault;
 
+        let modal_feedback = document.getElementById("modal-feedback")
         modal_feedback.classList.remove("show-modal-feedback");
 
+        let button_no = document.getElementById("article-survey-button-no");
+        let button_yes = document.getElementById("article-survey-button-yes");
         button_no.disabled = false;
         button_yes.disabled = false;
     }
 
     function send_positive_feedback(e) {
         e.preventDefault;
+        let article_survey = document.getElementById("article-survey");
+        let feedback_finish = document.getElementById("feedback-finish");
 
         article_survey.classList.add("is-closed")
-
         feedback_finish.classList.add("is-open");
     }
 
     function send_negative_feedback(e) {
         e.preventDefault;
+        let article_survey = document.getElementById("article-survey");
+        let feedback_finish = document.getElementById("feedback-finish");
+        let modal_feedback = document.getElementById("modal-feedback")
 
         modal_feedback.classList.remove("show-modal-feedback");
-
         article_survey.classList.add("is-closed")
         feedback_finish.classList.add("is-open");
 
     }
-
-
 
     function reason_is_selected(element) {
 
         element.addEventListener('click', (e) => {
 
             e.preventDefault;
+            let button_send_negative_feedback = document.getElementById("button_send_negative_feedback");
 
             button_send_negative_feedback.classList.remove("article-survey-button-disabled");
             button_send_negative_feedback.disabled = false;
@@ -323,32 +328,18 @@ if (component_feedback_article.length !== 0) {
         });
     }
 
-    function limit_comment_negative_feedback() {
-
-        const max_characters = 100;
-
-        negative_feedback_comment.addEventListener("input", () => {
-            const comment = negative_feedback_comment.value;
-
-            if (comment.length > max_characters)
-                negative_feedback_comment.setAttribute("maxlength", max_characters)
-        });
-    }
-
     disable_button_send_negative_feedback();
-    limit_comment_negative_feedback();
-
-    button_no.addEventListener("click", open_modal_feedback);
-    button_cancel_negative_feedback.addEventListener("click", close_modal_feedback);
 
     button_yes.addEventListener("click", send_positive_feedback);
+    button_no.addEventListener("click", open_modal_feedback);
 
     button_send_negative_feedback.addEventListener("click", send_negative_feedback);
-
+    button_cancel_negative_feedback.addEventListener("click", close_modal_feedback);
     radios_reason_negative_feedback.forEach(reason_is_selected);
+
 
 } else {
 
     console.log("Componente de feedback não está incluído nesta página");
-    
+
 }
