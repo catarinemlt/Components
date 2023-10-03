@@ -225,7 +225,6 @@
 .feedback-finish {
   display: none;
   padding: 20px 32px;
-  /* margin-top: 16px; */
   border: 1px solid var(--article-survey-lightgray-color);
   border-radius: 5px;
   color: var(--article-survey-darkgray-color);
