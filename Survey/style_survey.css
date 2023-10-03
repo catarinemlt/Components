@@ -57,6 +57,7 @@
   transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;;
 }
 
 .button-group button:hover {
@@ -226,10 +227,10 @@
 }
 
 .is-open {
+  display: block;
   transform: translate(0px, -16px);
   -webkit-transform: translate(0px, -16px);;
   -moz-transform: translate(0px, -16px);;
-  display: block;
 }
 
 .is-closed {
