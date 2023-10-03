@@ -34,6 +34,12 @@ const apiSettings =
 			pageUrl: "apis-de-integracao-nddmove",
 			swaggerUrl: "https://icomprova.nddcargo.com.br:9003/index.html"
 		}
+		,
+		{
+			product: "NDD Averba",
+			pageUrl: "manual-nddaverba-apis-de-integracao",
+			swaggerUrl: "https://reader.nddaverba.com.br/documentation/api.html"
+		}
 		//O NOVO OBJETO DEVE SER INSERIDO LOGO ACIMA DESTE COMENTÁRIO
 	]
 }
