@@ -55,6 +55,8 @@
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
 }
 
 .button-group button:hover {
@@ -96,6 +98,7 @@
   opacity: 0;
   transition: opacity 0.2s ease;
   -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
 }
 
 .show-modal-feedback {
@@ -118,6 +121,8 @@
   font-size: 15px;
   color: var(--article-survey-darkgray-color);
   transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
 }
 
 .dialog-negative-feedback span {
@@ -135,6 +140,8 @@
   color: var(--article-survey-white-color);
   cursor: pointer;
   transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
 }
 .dialog-negative-feedback .button_send_negative_feedback:hover {
   background-color: var(--article-survey-black-color);
@@ -148,6 +155,8 @@
   border: 1px solid var(--article-survey-lightgray-color);
   cursor: pointer;
   transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
 }
 
 .dialog-negative-feedback .button_cancel_negative_feedback:hover {
@@ -218,6 +227,8 @@
 
 .is-open {
   transform: translate(0px, -16px);
+  -webkit-transform: translate(0px, -16px);;
+  -moz-transform: translate(0px, -16px);;
   display: block;
 }
 
