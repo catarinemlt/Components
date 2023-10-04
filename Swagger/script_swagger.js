@@ -33,11 +33,15 @@ const apiSettings =
 			product: "NDD Move",
 			pageUrl: "apis-de-integracao-nddmove",
 			swaggerUrl: "https://icomprova.nddcargo.com.br:9003/index.html"
-		}
-		,
+		},
 		{
 			product: "NDD Averba",
 			pageUrl: "manual-nddaverba-apis-de-integracao",
+			swaggerUrl: "https://reader.nddaverba.com.br/documentation/api.html"
+		},
+		{
+			product: "NDD Teste",
+			pageUrl: "teste-importacao-3",
 			swaggerUrl: "https://reader.nddaverba.com.br/documentation/api.html"
 		}
 		//O NOVO OBJETO DEVE SER INSERIDO LOGO ACIMA DESTE COMENTÁRIO
@@ -56,7 +60,7 @@ function createSwagger(apiSettings) {
 
 		if (apis.pageUrl == pageUrlAddApi[5]) {
 			createIframe(apis.swaggerUrl)
-		}else if (apis.pageUrl == pageUrlAddApi[6]) {
+		} else if (apis.pageUrl == pageUrlAddApi[6]) {
 			createIframe(apis.swaggerUrl)
 		}
 	}
@@ -64,17 +68,28 @@ function createSwagger(apiSettings) {
 
 function createIframe(swaggerUrl) {
 
-	let mainContent = document.querySelector("#main-content");
-	let divSwagger = document.createElement("div");
-	let ifrm = document.createElement("iframe");
+	let html_paragraphs = [...document.querySelectorAll("p")];
+	let component_swagger = html_paragraphs.filter(text => text.innerText == '{{component-swagger}}');
 
-	ifrm.style.border = "1px solid #CCC";
-	ifrm.style.width = "100%";
-	ifrm.style.height = "700px";
+	if (component_swagger.length !== 0) {
 
-	ifrm.setAttribute("src", swaggerUrl);
+		component_swagger[0].insertAdjacentHTML('beforebegin', '<div class="container-swagger"></div>');
+		component_swagger[0].remove();
 
-	mainContent.appendChild(divSwagger);
-	divSwagger.appendChild(ifrm);
+		let container_swagger = document.querySelector(".container-swagger")
 
+		let iframe_swagger = document.createElement("iframe");
+		iframe_swagger.style.border = "1px solid #CCC";
+		iframe_swagger.style.width = "100%";
+		iframe_swagger.style.height = "700px";
+		iframe_swagger.setAttribute("src", swaggerUrl);
+
+		container_swagger.appendChild(iframe_swagger);
+
+
+	} else {
+
+		console.log("Componente swagger não está incluído nesta página");
+
+	}
 }
