@@ -22,7 +22,8 @@ const titles_documents_PT = [
     'Gameficação',
     'Webinar',
     'Guia de compatibilidade de fabricantes',// somente ingles e portugues
-    'Guia de módulos do MPS' // somente ingles e espanhol
+    'Guia de módulos do MPS', // somente ingles e espanhol
+    'Solução de problemas'
 ];
 
 //Títulos em Ingles
@@ -45,7 +46,8 @@ const titles_documents_EN = [
     'Gamification',
     'Webinar',
     'Manufacturer Compatibility Guide',
-    ''
+    '',
+    'Troubleshooting'
 ];
 
 //Títulos em Espanhol
@@ -68,7 +70,8 @@ const titles_documents_ES = [
     'Gamificación',
     'Webinar',
     '',
-    'NDD Print MPS'
+    'NDD Print MPS',
+    'Solución de problemas'
 ];
 
 
